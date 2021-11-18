@@ -6,11 +6,36 @@
 //
 
 import SwiftUI
+import Alamofire
+
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        HStack {
+            Spacer()
+            Button(action: onButtonPressed, label: {
+                Text("Turn On")
+            })
+                .padding()
+            Button(action: offButtonPressed, label: {
+                Text("Turn Off")
+            })
+                .padding()
+            Spacer()
+            
+        }
+    }
+}
+
+func onButtonPressed() {
+    AF.request("http://192.168.1.118/H").response { response in
+        debugPrint(response)
+    }
+}
+
+func offButtonPressed() {
+    AF.request("http://192.168.1.118/L").response { response in
+        debugPrint(response)
     }
 }
 
