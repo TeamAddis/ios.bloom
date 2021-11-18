@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10A297806E297CB227029B22 /* Pods_Celibi_Gardener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5340C322D298EA73F9CFD74E /* Pods_Celibi_Gardener.framework */; };
 		4981742627464F3100B6C8C4 /* Celibi_GardenerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981742527464F3100B6C8C4 /* Celibi_GardenerApp.swift */; };
 		4981742827464F3100B6C8C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981742727464F3100B6C8C4 /* ContentView.swift */; };
 		4981742A27464F3300B6C8C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4981742927464F3300B6C8C4 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 		4981743727464F3300B6C8C4 /* Celibi_GardenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981743627464F3300B6C8C4 /* Celibi_GardenerTests.swift */; };
 		4981744127464F3300B6C8C4 /* Celibi_GardenerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744027464F3300B6C8C4 /* Celibi_GardenerUITests.swift */; };
 		4981744327464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744227464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift */; };
+		49A8ECBD274671CF00A1E22F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 49A8ECBC274671CF00A1E22F /* Podfile */; };
+		4C7A66BDDB98704BA7FDCAEA /* Pods_Celibi_GardenerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26959654F5F3E1F2574AE620 /* Pods_Celibi_GardenerTests.framework */; };
+		E353CBBD47A3A9C6C3CB3619 /* Pods_Celibi_Gardener_Celibi_GardenerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE0C178D0D569048CE400D3 /* Pods_Celibi_Gardener_Celibi_GardenerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26959654F5F3E1F2574AE620 /* Pods_Celibi_GardenerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Celibi_GardenerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4981742227464F3100B6C8C4 /* Celibi Gardener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Celibi Gardener.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4981742527464F3100B6C8C4 /* Celibi_GardenerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celibi_GardenerApp.swift; sourceTree = "<group>"; };
 		4981742727464F3100B6C8C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +49,15 @@
 		4981743C27464F3300B6C8C4 /* Celibi GardenerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Celibi GardenerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4981744027464F3300B6C8C4 /* Celibi_GardenerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celibi_GardenerUITests.swift; sourceTree = "<group>"; };
 		4981744227464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celibi_GardenerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		49A8ECBC274671CF00A1E22F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		5340C322D298EA73F9CFD74E /* Pods_Celibi_Gardener.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Celibi_Gardener.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		698E0716D4C9BB19A8CE29B9 /* Pods-Celibi Gardener.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Celibi Gardener.debug.xcconfig"; path = "Target Support Files/Pods-Celibi Gardener/Pods-Celibi Gardener.debug.xcconfig"; sourceTree = "<group>"; };
+		8C7A29C722D3437C3AE6F444 /* Pods-Celibi Gardener-Celibi GardenerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Celibi Gardener-Celibi GardenerUITests.release.xcconfig"; path = "Target Support Files/Pods-Celibi Gardener-Celibi GardenerUITests/Pods-Celibi Gardener-Celibi GardenerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C279AC17F607DC759563E774 /* Pods-Celibi Gardener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Celibi Gardener.release.xcconfig"; path = "Target Support Files/Pods-Celibi Gardener/Pods-Celibi Gardener.release.xcconfig"; sourceTree = "<group>"; };
+		D1AAF78843EE17BEB17F485B /* Pods-Celibi Gardener-Celibi GardenerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Celibi Gardener-Celibi GardenerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Celibi Gardener-Celibi GardenerUITests/Pods-Celibi Gardener-Celibi GardenerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE9D65232E5B49A9060581DB /* Pods-Celibi GardenerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Celibi GardenerTests.release.xcconfig"; path = "Target Support Files/Pods-Celibi GardenerTests/Pods-Celibi GardenerTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0F9CE86BF3FA20A0912C406 /* Pods-Celibi GardenerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Celibi GardenerTests.debug.xcconfig"; path = "Target Support Files/Pods-Celibi GardenerTests/Pods-Celibi GardenerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDE0C178D0D569048CE400D3 /* Pods_Celibi_Gardener_Celibi_GardenerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Celibi_Gardener_Celibi_GardenerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A297806E297CB227029B22 /* Pods_Celibi_Gardener.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C7A66BDDB98704BA7FDCAEA /* Pods_Celibi_GardenerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,19 +81,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E353CBBD47A3A9C6C3CB3619 /* Pods_Celibi_Gardener_Celibi_GardenerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A22BD7B57191A5315677921 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				698E0716D4C9BB19A8CE29B9 /* Pods-Celibi Gardener.debug.xcconfig */,
+				C279AC17F607DC759563E774 /* Pods-Celibi Gardener.release.xcconfig */,
+				D1AAF78843EE17BEB17F485B /* Pods-Celibi Gardener-Celibi GardenerUITests.debug.xcconfig */,
+				8C7A29C722D3437C3AE6F444 /* Pods-Celibi Gardener-Celibi GardenerUITests.release.xcconfig */,
+				E0F9CE86BF3FA20A0912C406 /* Pods-Celibi GardenerTests.debug.xcconfig */,
+				DE9D65232E5B49A9060581DB /* Pods-Celibi GardenerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4981741927464F3100B6C8C4 = {
 			isa = PBXGroup;
 			children = (
+				49A8ECBC274671CF00A1E22F /* Podfile */,
 				4981742427464F3100B6C8C4 /* Celibi Gardener */,
 				4981743527464F3300B6C8C4 /* Celibi GardenerTests */,
 				4981743F27464F3300B6C8C4 /* Celibi GardenerUITests */,
 				4981742327464F3100B6C8C4 /* Products */,
+				2A22BD7B57191A5315677921 /* Pods */,
+				9902C134870C5E268390723A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +161,16 @@
 			path = "Celibi GardenerUITests";
 			sourceTree = "<group>";
 		};
+		9902C134870C5E268390723A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5340C322D298EA73F9CFD74E /* Pods_Celibi_Gardener.framework */,
+				EDE0C178D0D569048CE400D3 /* Pods_Celibi_Gardener_Celibi_GardenerUITests.framework */,
+				26959654F5F3E1F2574AE620 /* Pods_Celibi_GardenerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4981744627464F3300B6C8C4 /* Build configuration list for PBXNativeTarget "Celibi Gardener" */;
 			buildPhases = (
+				FC75BA7AB6B926EB90E71A6B /* [CP] Check Pods Manifest.lock */,
 				4981741E27464F3100B6C8C4 /* Sources */,
 				4981741F27464F3100B6C8C4 /* Frameworks */,
 				4981742027464F3100B6C8C4 /* Resources */,
+				F4085925499001CF0FC33433 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4981744927464F3300B6C8C4 /* Build configuration list for PBXNativeTarget "Celibi GardenerTests" */;
 			buildPhases = (
+				079C91C365C390714AC603FE /* [CP] Check Pods Manifest.lock */,
 				4981742E27464F3300B6C8C4 /* Sources */,
 				4981742F27464F3300B6C8C4 /* Frameworks */,
 				4981743027464F3300B6C8C4 /* Resources */,
@@ -169,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4981744C27464F3300B6C8C4 /* Build configuration list for PBXNativeTarget "Celibi GardenerUITests" */;
 			buildPhases = (
+				ADB5D45AA8A771659FBDDE28 /* [CP] Check Pods Manifest.lock */,
 				4981743827464F3300B6C8C4 /* Sources */,
 				4981743927464F3300B6C8C4 /* Frameworks */,
 				4981743A27464F3300B6C8C4 /* Resources */,
+				0BAEF61DCEAF5EB2B22BEA0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A8ECBD274671CF00A1E22F /* Podfile in Resources */,
 				4981742D27464F3300B6C8C4 /* Preview Assets.xcassets in Resources */,
 				4981742A27464F3300B6C8C4 /* Assets.xcassets in Resources */,
 			);
@@ -251,6 +301,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		079C91C365C390714AC603FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Celibi GardenerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0BAEF61DCEAF5EB2B22BEA0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Celibi Gardener-Celibi GardenerUITests/Pods-Celibi Gardener-Celibi GardenerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Celibi Gardener-Celibi GardenerUITests/Pods-Celibi Gardener-Celibi GardenerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Celibi Gardener-Celibi GardenerUITests/Pods-Celibi Gardener-Celibi GardenerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADB5D45AA8A771659FBDDE28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Celibi Gardener-Celibi GardenerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4085925499001CF0FC33433 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Celibi Gardener/Pods-Celibi Gardener-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Celibi Gardener/Pods-Celibi Gardener-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Celibi Gardener/Pods-Celibi Gardener-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC75BA7AB6B926EB90E71A6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Celibi Gardener-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4981741E27464F3100B6C8C4 /* Sources */ = {
@@ -413,6 +566,7 @@
 		};
 		4981744727464F3300B6C8C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 698E0716D4C9BB19A8CE29B9 /* Pods-Celibi Gardener.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,6 +597,7 @@
 		};
 		4981744827464F3300B6C8C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C279AC17F607DC759563E774 /* Pods-Celibi Gardener.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,6 +628,7 @@
 		};
 		4981744A27464F3300B6C8C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0F9CE86BF3FA20A0912C406 /* Pods-Celibi GardenerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +654,7 @@
 		};
 		4981744B27464F3300B6C8C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE9D65232E5B49A9060581DB /* Pods-Celibi GardenerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -523,6 +680,7 @@
 		};
 		4981744D27464F3300B6C8C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1AAF78843EE17BEB17F485B /* Pods-Celibi Gardener-Celibi GardenerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +704,7 @@
 		};
 		4981744E27464F3300B6C8C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C7A29C722D3437C3AE6F444 /* Pods-Celibi Gardener-Celibi GardenerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
