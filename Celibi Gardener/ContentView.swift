@@ -28,14 +28,14 @@ struct ContentView: View {
 }
 
 func onButtonPressed() {
-    AF.request("http://192.168.1.118/H").response { response in
-        debugPrint(response)
+    AF.request(PumpEndpoint.manual(PumpState(isOn: true))).response { response in
+        print(response)
     }
 }
 
 func offButtonPressed() {
-    AF.request("http://192.168.1.118/L").response { response in
-        debugPrint(response)
+    AF.request(PumpEndpoint.manual(PumpState(isOn: false))).response { response in
+        print(response)
     }
 }
 

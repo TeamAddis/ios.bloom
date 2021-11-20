@@ -15,6 +15,9 @@
 		4981743727464F3300B6C8C4 /* Celibi_GardenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981743627464F3300B6C8C4 /* Celibi_GardenerTests.swift */; };
 		4981744127464F3300B6C8C4 /* Celibi_GardenerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744027464F3300B6C8C4 /* Celibi_GardenerUITests.swift */; };
 		4981744327464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744227464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift */; };
+		49A111A72748D0ED0026E622 /* DataObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A111A62748D0ED0026E622 /* DataObjects.swift */; };
+		49A111A92748D8AD0026E622 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A111A82748D8AD0026E622 /* Endpoints.swift */; };
+		49A111AC2748DD220026E622 /* secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A111AB2748DD220026E622 /* secrets.swift */; };
 		49A8ECBD274671CF00A1E22F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 49A8ECBC274671CF00A1E22F /* Podfile */; };
 		4C7A66BDDB98704BA7FDCAEA /* Pods_Celibi_GardenerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26959654F5F3E1F2574AE620 /* Pods_Celibi_GardenerTests.framework */; };
 		E353CBBD47A3A9C6C3CB3619 /* Pods_Celibi_Gardener_Celibi_GardenerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE0C178D0D569048CE400D3 /* Pods_Celibi_Gardener_Celibi_GardenerUITests.framework */; };
@@ -49,6 +52,9 @@
 		4981743C27464F3300B6C8C4 /* Celibi GardenerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Celibi GardenerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4981744027464F3300B6C8C4 /* Celibi_GardenerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celibi_GardenerUITests.swift; sourceTree = "<group>"; };
 		4981744227464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celibi_GardenerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		49A111A62748D0ED0026E622 /* DataObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataObjects.swift; sourceTree = "<group>"; };
+		49A111A82748D8AD0026E622 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		49A111AB2748DD220026E622 /* secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secrets.swift; sourceTree = "<group>"; };
 		49A8ECBC274671CF00A1E22F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		5340C322D298EA73F9CFD74E /* Pods_Celibi_Gardener.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Celibi_Gardener.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		698E0716D4C9BB19A8CE29B9 /* Pods-Celibi Gardener.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Celibi Gardener.debug.xcconfig"; path = "Target Support Files/Pods-Celibi Gardener/Pods-Celibi Gardener.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,7 +104,6 @@
 				E0F9CE86BF3FA20A0912C406 /* Pods-Celibi GardenerTests.debug.xcconfig */,
 				DE9D65232E5B49A9060581DB /* Pods-Celibi GardenerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -132,6 +137,9 @@
 				4981742727464F3100B6C8C4 /* ContentView.swift */,
 				4981742927464F3300B6C8C4 /* Assets.xcassets */,
 				4981742B27464F3300B6C8C4 /* Preview Content */,
+				49A111A62748D0ED0026E622 /* DataObjects.swift */,
+				49A111A82748D8AD0026E622 /* Endpoints.swift */,
+				49A111AB2748DD220026E622 /* secrets.swift */,
 			);
 			path = "Celibi Gardener";
 			sourceTree = "<group>";
@@ -411,6 +419,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4981742827464F3100B6C8C4 /* ContentView.swift in Sources */,
+				49A111A72748D0ED0026E622 /* DataObjects.swift in Sources */,
+				49A111AC2748DD220026E622 /* secrets.swift in Sources */,
+				49A111A92748D8AD0026E622 /* Endpoints.swift in Sources */,
 				4981742627464F3100B6C8C4 /* Celibi_GardenerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
