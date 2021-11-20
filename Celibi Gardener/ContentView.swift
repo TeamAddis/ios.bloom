@@ -10,20 +10,39 @@ import Alamofire
 
 
 struct ContentView: View {
+    @State private var currentDate = Date()
+    
     var body: some View {
-        HStack {
-            Spacer()
-            Button(action: onButtonPressed, label: {
-                Text("Turn On")
-            })
-                .padding()
-            Button(action: offButtonPressed, label: {
-                Text("Turn Off")
-            })
-                .padding()
-            Spacer()
-            
+        VStack {
+            VStack {
+                HStack {
+                    DatePicker("", selection: $currentDate, displayedComponents: .hourAndMinute)
+                        .labelsHidden()
+                }
+                Button(action: setAlarmButtonPressed, label: {
+                    Text("Set Pump Alarm")
+                })
+            }
+            HStack {
+                Spacer()
+                Button(action: onButtonPressed, label: {
+                    Text("Turn On")
+                })
+                    .padding()
+                Button(action: offButtonPressed, label: {
+                    Text("Turn Off")
+                })
+                    .padding()
+                Spacer()
+                
+            }
         }
+    }
+}
+
+func setAlarmButtonPressed() {
+    AF.request(PumpEndpoint.alarm(AlarmObjectMessage(hours: 1, minutes: 24))).response { response in
+        print(response)
     }
 }
 

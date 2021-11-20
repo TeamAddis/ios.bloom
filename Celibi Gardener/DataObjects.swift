@@ -12,5 +12,6 @@ struct PumpState: Codable {
 }
 
 struct AlarmObjectMessage: Codable {
-    
+    var hours: Int
+    var minutes: Int
 }
