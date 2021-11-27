@@ -8,12 +8,43 @@
 import SwiftUI
 import Alamofire
 
+enum PumpStatus: Equatable {
+    
+    case on
+    case off
+    case none
+    
+    var status: String {
+        switch self {
+        case .off:
+            return "OFF"
+        case .on:
+            return "ON"
+        case .none:
+            return "NONE"
+        }
+    }
+}
 
 struct ContentView: View {
     @State private var currentDate = Date()
+    @State private var pumpStatus: PumpStatus = .none
     
     var body: some View {
         VStack {
+            HStack {
+                Text("Pump Status: \(pumpStatus.status)")
+                    .onAppear(perform: getServerStatus)
+                    .padding()
+                Spacer()
+                Button(action: getServerStatus, label: {
+                    Text("Refresh")
+                })
+                    .padding()
+            }
+            
+            Spacer()
+            
             VStack {
                 HStack {
                     DatePicker("", selection: $currentDate, displayedComponents: .hourAndMinute)
@@ -23,6 +54,7 @@ struct ContentView: View {
                     Text("Set Pump Alarm")
                 })
             }
+            
             HStack {
                 Spacer()
                 Button(action: onButtonPressed, label: {
@@ -34,29 +66,51 @@ struct ContentView: View {
                 })
                     .padding()
                 Spacer()
-                
             }
+            
+            Spacer()
+        }
+    }
+    
+    func getServerStatus() {
+        AF.request(StatusEndpoint.pumpStatus).response { response in
+            guard let data = response.data else {
+                pumpStatus = .none
+                return
+            }
+            
+            if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Int] {
+                DispatchQueue.main.async {
+                    if json["pumpIsActive"] == 0 {
+                        pumpStatus = .off
+                    } else {
+                        pumpStatus = .on
+                    }
+                }
+            }
+        }
+    }
+
+    func setAlarmButtonPressed() {
+        AF.request(PumpEndpoint.alarm(AlarmObjectMessage(hours: 1, minutes: 24))).response { response in
+            print(response)
+        }
+    }
+
+    func onButtonPressed() {
+        AF.request(PumpEndpoint.manual(PumpState(isOn: true))).response { response in
+            getServerStatus()
+        }
+    }
+
+    func offButtonPressed() {
+        AF.request(PumpEndpoint.manual(PumpState(isOn: false))).response { response in
+            getServerStatus()
         }
     }
 }
 
-func setAlarmButtonPressed() {
-    AF.request(PumpEndpoint.alarm(AlarmObjectMessage(hours: 1, minutes: 24))).response { response in
-        print(response)
-    }
-}
 
-func onButtonPressed() {
-    AF.request(PumpEndpoint.manual(PumpState(isOn: true))).response { response in
-        print(response)
-    }
-}
-
-func offButtonPressed() {
-    AF.request(PumpEndpoint.manual(PumpState(isOn: false))).response { response in
-        print(response)
-    }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

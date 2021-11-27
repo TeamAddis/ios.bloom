@@ -39,3 +39,27 @@ enum PumpEndpoint: APIConfiguration {
         }
     }
 }
+
+
+enum StatusEndpoint: APIConfiguration {
+    case pumpStatus
+    
+    var path: String {
+        switch self {
+        case .pumpStatus:
+            return "/ps"
+        }
+    }
+    
+    func asURLRequest() throws -> URLRequest {
+        let url = URL(string: HOST_URL + path)!
+        var request = URLRequest(url: url)
+        request.method = .get
+        
+        switch self {
+        case .pumpStatus:
+            return request
+        }
+
+    }
+}
