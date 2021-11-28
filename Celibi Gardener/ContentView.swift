@@ -29,12 +29,23 @@ enum PumpStatus: Equatable {
 struct ContentView: View {
     @State private var currentDate = Date()
     @State private var pumpStatus: PumpStatus = .none
+    @State private var serverVersion: Int = 0
     
     var body: some View {
         VStack {
             HStack {
+                Text("Server Version: \(serverVersion)")
+                    .padding()
+                Spacer()
+                Button(action: checkForServerUpdate, label: {
+                    Text("Check for Updates")
+                })
+                    .padding()
+            }
+            .onAppear(perform: getServerStatus)
+            
+            HStack {
                 Text("Pump Status: \(pumpStatus.status)")
-                    .onAppear(perform: getServerStatus)
                     .padding()
                 Spacer()
                 Button(action: getServerStatus, label: {
@@ -72,6 +83,10 @@ struct ContentView: View {
         }
     }
     
+    func checkForServerUpdate() {
+        
+    }
+    
     func getServerStatus() {
         AF.request(StatusEndpoint.pumpStatus).response { response in
             guard let data = response.data else {
@@ -86,6 +101,8 @@ struct ContentView: View {
                     } else {
                         pumpStatus = .on
                     }
+                    
+                    serverVersion = json["softwareVersion"] ?? 0
                 }
             }
         }
