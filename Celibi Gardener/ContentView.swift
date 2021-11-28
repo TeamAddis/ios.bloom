@@ -31,6 +31,8 @@ struct ContentView: View {
     @State private var pumpStatus: PumpStatus = .none
     @State private var serverVersion: Int = 0
     
+    private let GMT = 9
+    
     var body: some View {
         VStack {
             HStack {
@@ -109,7 +111,9 @@ struct ContentView: View {
     }
 
     func setAlarmButtonPressed() {
-        AF.request(PumpEndpoint.alarm(AlarmObjectMessage(hours: 1, minutes: 24))).response { response in
+        let hours = Calendar.current.component(.hour, from: currentDate) - GMT
+        let minutes = Calendar.current.component(.minute, from: currentDate)
+        AF.request(PumpEndpoint.alarm(AlarmObjectMessage(hours: hours, minutes: minutes))).response { response in
             print(response)
         }
     }
