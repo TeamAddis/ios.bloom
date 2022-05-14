@@ -11,13 +11,11 @@ import Alamofire
 struct ManualView: View {
     @EnvironmentObject var serverStatus: ServerStatus
     
-    @State private var pumpToggleStatus: Bool = false
-    
     var body: some View {
         Form {
             Section {
-                Toggle("Pump", isOn: $pumpToggleStatus)
-                    .onChange(of: pumpToggleStatus) { value in
+                Toggle("Pump", isOn: $serverStatus.pumpStatus)
+                    .onChange(of: serverStatus.pumpStatus) { value in
                         if value {
                             onButtonPressed()
                         } else {

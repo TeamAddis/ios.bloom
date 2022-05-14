@@ -27,7 +27,7 @@ enum PumpStatus: Equatable {
 enum Status: Equatable {
     case connected, unavailable
     
-    var status: String {
+    var name: String {
         switch self {
         case .connected:
             return "Connected"
@@ -38,7 +38,7 @@ enum Status: Equatable {
 }
 
 class ServerStatus: ObservableObject {
-    @Published var pumpStatus: PumpStatus = .none
+    @Published var pumpStatus: Bool = false
     @Published var serverVersion: Int = 0
     @Published var status: Status = .unavailable
     @Published var alarms: [AlarmObjectMessage] = []
@@ -50,16 +50,16 @@ class ServerStatus: ObservableObject {
     func getServerStatus() {
         AF.request(StatusEndpoint.pumpStatus).response { response in
             guard let data = response.data else {
-                self.pumpStatus = .none
+                self.pumpStatus = false
                 return
             }
             
             if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Int] {
                 DispatchQueue.main.async {
                     if json["pumpIsActive"] == 0 {
-                        self.pumpStatus = .off
+                        self.pumpStatus = false
                     } else {
-                        self.pumpStatus = .on
+                        self.pumpStatus = true
                     }
                     
                     self.serverVersion = json["softwareVersion"] ?? 0

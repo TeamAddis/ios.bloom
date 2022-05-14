@@ -12,25 +12,14 @@ struct ServerStatusView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Text("Server Version: \(serverStatus.serverVersion)")
-                    .padding()
-                Spacer()
-                Button(action: checkForServerUpdate, label: {
-                    Text("Check for Updates")
-                })
-                    .padding()
-            }
+            Text("Server Status: \(serverStatus.status.name)")
             
-            HStack {
-                Text("Pump Status: \(serverStatus.pumpStatus.status)")
-                    .padding()
-                Spacer()
-                Button(action: serverStatus.getServerStatus, label: {
-                    Text("Refresh")
-                })
-                    .padding()
-            }
+            Text("Server Version: \(serverStatus.serverVersion)")
+            
+            Button(action: serverStatus.getServerStatus, label: {
+                Text("Refresh")
+            })
+                .padding()
         }
     }
     
