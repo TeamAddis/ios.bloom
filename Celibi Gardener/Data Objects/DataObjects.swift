@@ -11,7 +11,9 @@ struct PumpState: Codable {
     var isOn: Bool
 }
 
-struct AlarmObjectMessage: Codable {
+struct AlarmObjectMessage: Codable, Identifiable {
+    let id = UUID()
+    
     var hours: Int
     var minutes: Int
 }
