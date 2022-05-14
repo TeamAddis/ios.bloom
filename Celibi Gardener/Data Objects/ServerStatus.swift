@@ -41,6 +41,7 @@ class ServerStatus: ObservableObject {
     @Published var pumpStatus: PumpStatus = .none
     @Published var serverVersion: Int = 0
     @Published var status: Status = .unavailable
+    @Published var alarms: [AlarmObjectMessage] = []
     
     init() {
         getServerStatus()
@@ -65,5 +66,13 @@ class ServerStatus: ObservableObject {
                 }
             }
         }
+    }
+    
+    // Makes it easy to test displaying multiple alarms
+    func createTestAlarms() {
+        alarms.append(AlarmObjectMessage(hours: 10, minutes: 10))
+        alarms.append(AlarmObjectMessage(hours: 12, minutes: 57))
+        alarms.append(AlarmObjectMessage(hours: 2, minutes: 24))
+        alarms.append(AlarmObjectMessage(hours: 22, minutes: 53))
     }
 }

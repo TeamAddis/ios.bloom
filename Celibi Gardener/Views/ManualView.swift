@@ -11,19 +11,19 @@ import Alamofire
 struct ManualView: View {
     @EnvironmentObject var serverStatus: ServerStatus
     
+    @State private var pumpToggleStatus: Bool = false
+    
     var body: some View {
-        VStack {
-            HStack {
-                Spacer()
-                Button(action: onButtonPressed, label: {
-                    Text("Turn On")
-                })
-                    .padding()
-                Button(action: offButtonPressed, label: {
-                    Text("Turn Off")
-                })
-                    .padding()
-                Spacer()
+        Form {
+            Section {
+                Toggle("Pump", isOn: $pumpToggleStatus)
+                    .onChange(of: pumpToggleStatus) { value in
+                        if value {
+                            onButtonPressed()
+                        } else {
+                            offButtonPressed()
+                        }
+                    }
             }
         }
     }
@@ -38,11 +38,5 @@ struct ManualView: View {
         AF.request(PumpEndpoint.manual(PumpState(isOn: false))).response { response in
             serverStatus.getServerStatus()
         }
-    }
-}
-
-struct ManualView_Previews: PreviewProvider {
-    static var previews: some View {
-        ManualView()
     }
 }

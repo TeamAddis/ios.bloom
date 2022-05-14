@@ -22,6 +22,7 @@
 		49FB1EED282FBAB3000C7CA4 /* ServerStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB1EEC282FBAB3000C7CA4 /* ServerStatusView.swift */; };
 		49FB1EEF282FF8CA000C7CA4 /* TimersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB1EEE282FF8CA000C7CA4 /* TimersView.swift */; };
 		49FB1EF1282FF8DD000C7CA4 /* ManualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB1EF0282FF8DD000C7CA4 /* ManualView.swift */; };
+		49FB1EF328300906000C7CA4 /* CreateNewAlarmFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB1EF228300906000C7CA4 /* CreateNewAlarmFormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		49FB1EEC282FBAB3000C7CA4 /* ServerStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusView.swift; sourceTree = "<group>"; };
 		49FB1EEE282FF8CA000C7CA4 /* TimersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersView.swift; sourceTree = "<group>"; };
 		49FB1EF0282FF8DD000C7CA4 /* ManualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualView.swift; sourceTree = "<group>"; };
+		49FB1EF228300906000C7CA4 /* CreateNewAlarmFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewAlarmFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,14 +112,13 @@
 		4981742427464F3100B6C8C4 /* Celibi Gardener */ = {
 			isa = PBXGroup;
 			children = (
+				49FB1EF528300A94000C7CA4 /* Data Objects */,
+				49FB1EF428300A87000C7CA4 /* REST */,
 				49FB1EEB282FBA89000C7CA4 /* Views */,
 				49FB1EE7282FB1B2000C7CA4 /* secrets.swift */,
 				4981742527464F3100B6C8C4 /* Celibi_GardenerApp.swift */,
 				4981742927464F3300B6C8C4 /* Assets.xcassets */,
 				4981742B27464F3300B6C8C4 /* Preview Content */,
-				49A111A62748D0ED0026E622 /* DataObjects.swift */,
-				49A111A82748D8AD0026E622 /* Endpoints.swift */,
-				49FB1EE9282FB415000C7CA4 /* ServerStatus.swift */,
 			);
 			path = "Celibi Gardener";
 			sourceTree = "<group>";
@@ -154,8 +155,26 @@
 				49FB1EEC282FBAB3000C7CA4 /* ServerStatusView.swift */,
 				49FB1EEE282FF8CA000C7CA4 /* TimersView.swift */,
 				49FB1EF0282FF8DD000C7CA4 /* ManualView.swift */,
+				49FB1EF228300906000C7CA4 /* CreateNewAlarmFormView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		49FB1EF428300A87000C7CA4 /* REST */ = {
+			isa = PBXGroup;
+			children = (
+				49A111A82748D8AD0026E622 /* Endpoints.swift */,
+			);
+			path = REST;
+			sourceTree = "<group>";
+		};
+		49FB1EF528300A94000C7CA4 /* Data Objects */ = {
+			isa = PBXGroup;
+			children = (
+				49A111A62748D0ED0026E622 /* DataObjects.swift */,
+				49FB1EE9282FB415000C7CA4 /* ServerStatus.swift */,
+			);
+			path = "Data Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +318,7 @@
 				49FB1EF1282FF8DD000C7CA4 /* ManualView.swift in Sources */,
 				49FB1EEF282FF8CA000C7CA4 /* TimersView.swift in Sources */,
 				49A111A72748D0ED0026E622 /* DataObjects.swift in Sources */,
+				49FB1EF328300906000C7CA4 /* CreateNewAlarmFormView.swift in Sources */,
 				49FB1EE8282FB1B2000C7CA4 /* secrets.swift in Sources */,
 				49FB1EED282FBAB3000C7CA4 /* ServerStatusView.swift in Sources */,
 				49A111A92748D8AD0026E622 /* Endpoints.swift in Sources */,

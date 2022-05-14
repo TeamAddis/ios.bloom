@@ -9,27 +9,43 @@ import SwiftUI
 import Alamofire
 
 struct TimersView: View {
-    @State private var currentDate = Date()
+    @EnvironmentObject var serverStatus: ServerStatus
     
-    private let GMT = 9
+    @State private var showCreateAlarmForm: Bool = false
     
     var body: some View {
-        VStack {
-            HStack {
-                DatePicker("", selection: $currentDate, displayedComponents: .hourAndMinute)
-                    .labelsHidden()
+        NavigationView {
+            List(serverStatus.alarms) { alarm in
+                AlarmListItemView(hours: alarm.hours, minutes: alarm.minutes)
             }
-            Button(action: setAlarmButtonPressed, label: {
-                Text("Set Pump Alarm")
-            })
+            .navigationTitle(Text("Alarms"))
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        self.showCreateAlarmForm = true
+                    }, label: {
+                        Image(systemName: "plus")
+                    })
+                }
+            }
         }
+        .sheet(isPresented: $showCreateAlarmForm, onDismiss: {
+            self.showCreateAlarmForm = false
+        }, content: {
+            CreateNewAlarmFormView()
+        })
     }
+}
+
+struct AlarmListItemView: View {
+    let hours: Int
+    let minutes: Int
     
-    func setAlarmButtonPressed() {
-        let hours = Calendar.current.component(.hour, from: currentDate) - GMT
-        let minutes = Calendar.current.component(.minute, from: currentDate)
-        AF.request(PumpEndpoint.alarm(AlarmObjectMessage(hours: hours, minutes: minutes))).response { response in
-            print(response)
+    var body: some View {
+        HStack {
+            Text("Alarm: ")
+            Text("\(String(hours)):\(String(minutes))")
         }
     }
 }

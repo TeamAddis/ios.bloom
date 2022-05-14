@@ -8,7 +8,7 @@
 import SwiftUI
 import Alamofire
 
-enum PickerContent: Int, Equatable {
+enum PickerContent: Int {
     case manual = 0, timers = 1
 }
 
