@@ -6,6 +6,7 @@
 //
 
 import Alamofire
+import UIKit
 
 protocol APIConfiguration: URLRequestConvertible {
     var path: String { get }
