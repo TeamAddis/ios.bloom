@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491EBD3E28390D560050FDEF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 491EBD3D28390D560050FDEF /* Alamofire */; };
 		4981742627464F3100B6C8C4 /* Celibi_GardenerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981742527464F3100B6C8C4 /* Celibi_GardenerApp.swift */; };
 		4981742827464F3100B6C8C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981742727464F3100B6C8C4 /* ContentView.swift */; };
 		4981742A27464F3300B6C8C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4981742927464F3300B6C8C4 /* Assets.xcassets */; };
@@ -16,7 +17,6 @@
 		4981744327464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744227464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift */; };
 		49A111A72748D0ED0026E622 /* DataObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A111A62748D0ED0026E622 /* DataObjects.swift */; };
 		49A111A92748D8AD0026E622 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A111A82748D8AD0026E622 /* Endpoints.swift */; };
-		49FB1EE6282FB084000C7CA4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 49FB1EE5282FB084000C7CA4 /* Alamofire */; };
 		49FB1EE8282FB1B2000C7CA4 /* secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB1EE7282FB1B2000C7CA4 /* secrets.swift */; };
 		49FB1EEA282FB415000C7CA4 /* ServerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB1EE9282FB415000C7CA4 /* ServerStatus.swift */; };
 		49FB1EED282FBAB3000C7CA4 /* ServerStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB1EEC282FBAB3000C7CA4 /* ServerStatusView.swift */; };
@@ -68,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49FB1EE6282FB084000C7CA4 /* Alamofire in Frameworks */,
+				491EBD3E28390D560050FDEF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +194,7 @@
 			);
 			name = "Celibi Gardener";
 			packageProductDependencies = (
-				49FB1EE5282FB084000C7CA4 /* Alamofire */,
+				491EBD3D28390D560050FDEF /* Alamofire */,
 			);
 			productName = "Celibi Gardener";
 			productReference = 4981742227464F3100B6C8C4 /* Celibi Gardener.app */;
@@ -269,7 +269,7 @@
 			);
 			mainGroup = 4981741927464F3100B6C8C4;
 			packageReferences = (
-				49FB1EE4282FB084000C7CA4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				491EBD3C28390D560050FDEF /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 4981742327464F3100B6C8C4 /* Products */;
 			projectDirPath = "";
@@ -489,9 +489,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -501,7 +502,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -519,9 +520,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -531,7 +533,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -673,20 +675,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		49FB1EE4282FB084000C7CA4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		491EBD3C28390D560050FDEF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire#installation";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		49FB1EE5282FB084000C7CA4 /* Alamofire */ = {
+		491EBD3D28390D560050FDEF /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 49FB1EE4282FB084000C7CA4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 491EBD3C28390D560050FDEF /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */

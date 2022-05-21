@@ -9,6 +9,8 @@ import SwiftUI
 import Alamofire
 
 struct CreateNewAlarmFormView: View {
+    @Environment(\.dismiss) private var dismiss
+    
     @State private var currentDate = Date()
     private let GMT = 9
     
@@ -27,14 +29,9 @@ struct CreateNewAlarmFormView: View {
     func setAlarmButtonPressed() {
         let hours = Calendar.current.component(.hour, from: currentDate) - GMT
         let minutes = Calendar.current.component(.minute, from: currentDate)
-        AF.request(PumpEndpoint.alarm(AlarmObjectMessage(hours: hours, minutes: minutes))).response { response in
+        AF.request(PumpEndpoint.alarm(AlarmObjectMessage(id: 0, hours: hours, minutes: minutes, enabled: true))).response { response in
             print(response)
         }
-    }
-}
-
-struct CreateNewAlarmFormView_Previews: PreviewProvider {
-    static var previews: some View {
-        CreateNewAlarmFormView()
+        dismiss()
     }
 }

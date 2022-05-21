@@ -47,22 +47,44 @@ class ServerStatus: ObservableObject {
         getServerStatus()
     }
     
+    private func addAlarm(newAlarm: AlarmObjectMessage) {
+        for i in 0..<alarms.count {
+            if alarms[i].id == newAlarm.id {
+                alarms[i].minutes = newAlarm.minutes
+                alarms[i].hours = newAlarm.hours
+                alarms[i].enabled = newAlarm.enabled
+                return
+            }
+        }
+        
+        alarms.append(newAlarm)
+    }
+    
     func getServerStatus() {
         AF.request(StatusEndpoint.pumpStatus).response { response in
             guard let data = response.data else {
-                self.pumpStatus = false
+                self.status = .unavailable
                 return
             }
-            
-            if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Int] {
-                DispatchQueue.main.async {
-                    if json["pumpIsActive"] == 0 {
-                        self.pumpStatus = false
-                    } else {
-                        self.pumpStatus = true
+            if response.response?.statusCode == 200 {
+                self.status = .connected
+                
+                if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
+                    DispatchQueue.main.async {
+                        if json["pumpIsActive"] as? Int == 1 {
+                            self.pumpStatus = true
+                        } else {
+                            self.pumpStatus = false
+                        }
+                        
+                        self.serverVersion = json["softwareVersion"] as? Int ?? 0
+                        
+                        if json["alarmValid"] as? Bool == true {
+                            var tAlarm = AlarmObjectMessage(id: json["alarmId"] as! Int,hours: json["alarmHours"] as! Int, minutes: json["alarmMinutes"] as! Int)
+                            tAlarm.enabled = (json["alarmEnabled"] != nil)
+                            self.addAlarm(newAlarm: tAlarm)
+                        }
                     }
-                    
-                    self.serverVersion = json["softwareVersion"] ?? 0
                 }
             }
         }
@@ -70,9 +92,9 @@ class ServerStatus: ObservableObject {
     
     // Makes it easy to test displaying multiple alarms
     func createTestAlarms() {
-        alarms.append(AlarmObjectMessage(hours: 10, minutes: 10))
-        alarms.append(AlarmObjectMessage(hours: 12, minutes: 57))
-        alarms.append(AlarmObjectMessage(hours: 2, minutes: 24))
-        alarms.append(AlarmObjectMessage(hours: 22, minutes: 53))
+        alarms.append(AlarmObjectMessage(id: 0, hours: 10, minutes: 10))
+        alarms.append(AlarmObjectMessage(id: 1, hours: 12, minutes: 57))
+        alarms.append(AlarmObjectMessage(id: 2, hours: 2, minutes: 24))
+        alarms.append(AlarmObjectMessage(id: 3, hours: 22, minutes: 53))
     }
 }

@@ -16,7 +16,7 @@ struct TimersView: View {
     var body: some View {
         NavigationView {
             List(serverStatus.alarms) { alarm in
-                AlarmListItemView(hours: alarm.hours, minutes: alarm.minutes)
+                AlarmListItemView(hours: alarm.hours, minutes: alarm.minutes, toogle: alarm.enabled)
             }
             .navigationTitle(Text("Alarms"))
             .navigationBarTitleDisplayMode(.inline)
@@ -42,10 +42,14 @@ struct AlarmListItemView: View {
     let hours: Int
     let minutes: Int
     
+    @State var toogle: Bool
+    
     var body: some View {
         HStack {
             Text("Alarm: ")
             Text("\(String(hours)):\(String(minutes))")
+            Spacer()
+            Toggle("", isOn: $toogle)
         }
     }
 }
