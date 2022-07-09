@@ -10,6 +10,7 @@ import Alamofire
 
 struct CreateNewAlarmFormView: View {
     @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject var serverStatus: ServerStatus
     
     @State private var currentDate = Date()
     private let GMT = 9
@@ -26,10 +27,17 @@ struct CreateNewAlarmFormView: View {
         }
     }
     
+    func getNextAlarmID() -> Int {
+        return serverStatus.alarms.count
+    }
+    
     func setAlarmButtonPressed() {
-        let hours = Calendar.current.component(.hour, from: currentDate) - GMT
+        var hours = Calendar.current.component(.hour, from: currentDate) - GMT
+        if hours < 0 {
+            hours += 24
+        }
         let minutes = Calendar.current.component(.minute, from: currentDate)
-        AF.request(PumpEndpoint.alarm(AlarmObjectMessage(id: 0, hours: hours, minutes: minutes, enabled: true))).response { response in
+        AF.request(PumpEndpoint.alarm(AlarmObjectMessage(id: getNextAlarmID(), hours: hours, minutes: minutes, enabled: true))).response { response in
             print(response)
         }
         dismiss()

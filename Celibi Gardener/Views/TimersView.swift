@@ -23,7 +23,9 @@ struct TimersView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
-                        self.showCreateAlarmForm = true
+                        if canCreateNewAlarm() {
+                            self.showCreateAlarmForm = true
+                        }
                     }, label: {
                         Image(systemName: "plus")
                     })
@@ -36,20 +38,34 @@ struct TimersView: View {
             CreateNewAlarmFormView()
         })
     }
+    
+    func canCreateNewAlarm() -> Bool {
+        return (serverStatus.alarms.count < serverStatus.MAX_NUMBER_OF_ALARMS)
+    }
 }
 
 struct AlarmListItemView: View {
     let hours: Int
     let minutes: Int
+    private let GMT = 9
     
     @State var toogle: Bool
     
     var body: some View {
         HStack {
             Text("Alarm: ")
-            Text("\(String(hours)):\(String(minutes))")
+            Text("\(String(updateHoursForTimezone(hours: hours))):\(String(minutes))")
             Spacer()
             Toggle("", isOn: $toogle)
         }
+    }
+    
+    func updateHoursForTimezone(hours: Int) -> Int {
+        var newHours = hours
+        newHours += GMT
+        if newHours > 24 {
+            newHours -= 24
+        }
+        return newHours
     }
 }

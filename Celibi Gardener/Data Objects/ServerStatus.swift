@@ -42,9 +42,12 @@ class ServerStatus: ObservableObject {
     @Published var serverVersion: Int = 0
     @Published var status: Status = .unavailable
     @Published var alarms: [AlarmObjectMessage] = []
+    let MAX_NUMBER_OF_ALARMS = 4
     
     init() {
         getServerStatus()
+        getPumpStatus()
+        getAlarmStatus()
     }
     
     private func addAlarm(newAlarm: AlarmObjectMessage) {
@@ -60,8 +63,26 @@ class ServerStatus: ObservableObject {
         alarms.append(newAlarm)
     }
     
+    func getAlarmStatus() {
+        AF.request(StatusEndpoint.alarmStatus).response { response in
+            guard let data = response.data else {
+                self.status = .unavailable
+                return
+            }
+            if response.response?.statusCode == 200 {
+                self.status = .connected
+                
+                if let json = try? JSONDecoder().decode(Alarms.self, from: data){
+                    DispatchQueue.main.async {
+                        self.alarms = json.alarms
+                    }
+                }
+            }
+        }
+    }
+    
     func getServerStatus() {
-        AF.request(StatusEndpoint.pumpStatus).response { response in
+        AF.request(StatusEndpoint.serverStatus).response { response in
             guard let data = response.data else {
                 self.status = .unavailable
                 return
@@ -71,18 +92,26 @@ class ServerStatus: ObservableObject {
                 
                 if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
                     DispatchQueue.main.async {
+                        self.serverVersion = json["softwareVersion"] as? Int ?? 0
+                    }
+                }
+            }
+        }
+    }
+    
+    func getPumpStatus() {
+        AF.request(StatusEndpoint.pumpStatus).response { response in
+            guard let data = response.data else {
+                self.status = .unavailable
+                return
+            }
+            if response.response?.statusCode == 200 {
+                if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
+                    DispatchQueue.main.async {
                         if json["pumpIsActive"] as? Int == 1 {
                             self.pumpStatus = true
                         } else {
                             self.pumpStatus = false
-                        }
-                        
-                        self.serverVersion = json["softwareVersion"] as? Int ?? 0
-                        
-                        if json["alarmValid"] as? Bool == true {
-                            var tAlarm = AlarmObjectMessage(id: json["alarmId"] as! Int,hours: json["alarmHours"] as! Int, minutes: json["alarmMinutes"] as! Int)
-                            tAlarm.enabled = (json["alarmEnabled"] != nil)
-                            self.addAlarm(newAlarm: tAlarm)
                         }
                     }
                 }

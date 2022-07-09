@@ -16,7 +16,11 @@ struct ServerStatusView: View {
             
             Text("Server Version: \(serverStatus.serverVersion)")
             
-            Button(action: serverStatus.getServerStatus, label: {
+            Button(action: {
+                serverStatus.getServerStatus()
+                serverStatus.getPumpStatus()
+                serverStatus.getAlarmStatus()
+            }, label: {
                 Text("Refresh")
             })
                 .padding()

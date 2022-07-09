@@ -18,3 +18,7 @@ struct AlarmObjectMessage: Codable, Identifiable {
     var minutes: Int
     var enabled: Bool = false
 }
+
+struct Alarms: Codable {
+    var alarms: [AlarmObjectMessage]
+}

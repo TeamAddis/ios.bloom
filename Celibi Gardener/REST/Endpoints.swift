@@ -43,13 +43,18 @@ enum PumpEndpoint: APIConfiguration {
 
 
 enum StatusEndpoint: APIConfiguration {
-    case pumpStatus
+    case pumpStatus, alarmStatus, serverStatus
     
     var path: String {
         switch self {
         case .pumpStatus:
             return "/ps"
+        case .alarmStatus:
+            return "/as"
+        case .serverStatus:
+            return "/ss"
         }
+        
     }
     
     func asURLRequest() throws -> URLRequest {
@@ -57,10 +62,7 @@ enum StatusEndpoint: APIConfiguration {
         var request = URLRequest(url: url)
         request.method = .get
         
-        switch self {
-        case .pumpStatus:
-            return request
-        }
+        return request
 
     }
 }
