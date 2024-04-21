@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		491EBD3E28390D560050FDEF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 491EBD3D28390D560050FDEF /* Alamofire */; };
 		4981742627464F3100B6C8C4 /* Celibi_GardenerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981742527464F3100B6C8C4 /* Celibi_GardenerApp.swift */; };
 		4981742827464F3100B6C8C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981742727464F3100B6C8C4 /* ContentView.swift */; };
 		4981742A27464F3300B6C8C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4981742927464F3300B6C8C4 /* Assets.xcassets */; };
@@ -15,14 +14,12 @@
 		4981743727464F3300B6C8C4 /* Celibi_GardenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981743627464F3300B6C8C4 /* Celibi_GardenerTests.swift */; };
 		4981744127464F3300B6C8C4 /* Celibi_GardenerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744027464F3300B6C8C4 /* Celibi_GardenerUITests.swift */; };
 		4981744327464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744227464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift */; };
-		49A111A72748D0ED0026E622 /* DataObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A111A62748D0ED0026E622 /* DataObjects.swift */; };
-		49A111A92748D8AD0026E622 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A111A82748D8AD0026E622 /* Endpoints.swift */; };
-		49FB1EE8282FB1B2000C7CA4 /* secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB1EE7282FB1B2000C7CA4 /* secrets.swift */; };
-		49FB1EEA282FB415000C7CA4 /* ServerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB1EE9282FB415000C7CA4 /* ServerStatus.swift */; };
-		49FB1EED282FBAB3000C7CA4 /* ServerStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB1EEC282FBAB3000C7CA4 /* ServerStatusView.swift */; };
-		49FB1EEF282FF8CA000C7CA4 /* TimersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB1EEE282FF8CA000C7CA4 /* TimersView.swift */; };
-		49FB1EF1282FF8DD000C7CA4 /* ManualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB1EF0282FF8DD000C7CA4 /* ManualView.swift */; };
-		49FB1EF328300906000C7CA4 /* CreateNewAlarmFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB1EF228300906000C7CA4 /* CreateNewAlarmFormView.swift */; };
+		49A81B1B2BD4FD7D0095D7A4 /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49A81B1A2BD4FD7D0095D7A4 /* secrets.plist */; };
+		49A81B202BD521F80095D7A4 /* AWSIoT in Frameworks */ = {isa = PBXBuildFile; productRef = 49A81B1F2BD521F80095D7A4 /* AWSIoT */; };
+		49A81B222BD5227E0095D7A4 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A81B212BD5227E0095D7A4 /* AuthenticationManager.swift */; };
+		49A81B242BD540AD0095D7A4 /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A81B232BD540AD0095D7A4 /* MQTTManager.swift */; };
+		49A81B262BD541760095D7A4 /* MQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A81B252BD541760095D7A4 /* MQTTMessage.swift */; };
+		49A81B282BD55A930095D7A4 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A81B272BD55A930095D7A4 /* Configurations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,14 +50,11 @@
 		4981743C27464F3300B6C8C4 /* Celibi GardenerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Celibi GardenerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4981744027464F3300B6C8C4 /* Celibi_GardenerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celibi_GardenerUITests.swift; sourceTree = "<group>"; };
 		4981744227464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celibi_GardenerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		49A111A62748D0ED0026E622 /* DataObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataObjects.swift; sourceTree = "<group>"; };
-		49A111A82748D8AD0026E622 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
-		49FB1EE7282FB1B2000C7CA4 /* secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secrets.swift; sourceTree = SOURCE_ROOT; };
-		49FB1EE9282FB415000C7CA4 /* ServerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatus.swift; sourceTree = "<group>"; };
-		49FB1EEC282FBAB3000C7CA4 /* ServerStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusView.swift; sourceTree = "<group>"; };
-		49FB1EEE282FF8CA000C7CA4 /* TimersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersView.swift; sourceTree = "<group>"; };
-		49FB1EF0282FF8DD000C7CA4 /* ManualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualView.swift; sourceTree = "<group>"; };
-		49FB1EF228300906000C7CA4 /* CreateNewAlarmFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewAlarmFormView.swift; sourceTree = "<group>"; };
+		49A81B1A2BD4FD7D0095D7A4 /* secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = secrets.plist; sourceTree = "<group>"; };
+		49A81B212BD5227E0095D7A4 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		49A81B232BD540AD0095D7A4 /* MQTTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
+		49A81B252BD541760095D7A4 /* MQTTMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTMessage.swift; sourceTree = "<group>"; };
+		49A81B272BD55A930095D7A4 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				491EBD3E28390D560050FDEF /* Alamofire in Frameworks */,
+				49A81B202BD521F80095D7A4 /* AWSIoT in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,13 +106,15 @@
 		4981742427464F3100B6C8C4 /* Celibi Gardener */ = {
 			isa = PBXGroup;
 			children = (
-				49FB1EF528300A94000C7CA4 /* Data Objects */,
-				49FB1EF428300A87000C7CA4 /* REST */,
-				49FB1EEB282FBA89000C7CA4 /* Views */,
-				49FB1EE7282FB1B2000C7CA4 /* secrets.swift */,
+				4981742727464F3100B6C8C4 /* ContentView.swift */,
 				4981742527464F3100B6C8C4 /* Celibi_GardenerApp.swift */,
 				4981742927464F3300B6C8C4 /* Assets.xcassets */,
 				4981742B27464F3300B6C8C4 /* Preview Content */,
+				49A81B1A2BD4FD7D0095D7A4 /* secrets.plist */,
+				49A81B212BD5227E0095D7A4 /* AuthenticationManager.swift */,
+				49A81B232BD540AD0095D7A4 /* MQTTManager.swift */,
+				49A81B252BD541760095D7A4 /* MQTTMessage.swift */,
+				49A81B272BD55A930095D7A4 /* Configurations.swift */,
 			);
 			path = "Celibi Gardener";
 			sourceTree = "<group>";
@@ -148,35 +144,6 @@
 			path = "Celibi GardenerUITests";
 			sourceTree = "<group>";
 		};
-		49FB1EEB282FBA89000C7CA4 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				4981742727464F3100B6C8C4 /* ContentView.swift */,
-				49FB1EEC282FBAB3000C7CA4 /* ServerStatusView.swift */,
-				49FB1EEE282FF8CA000C7CA4 /* TimersView.swift */,
-				49FB1EF0282FF8DD000C7CA4 /* ManualView.swift */,
-				49FB1EF228300906000C7CA4 /* CreateNewAlarmFormView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		49FB1EF428300A87000C7CA4 /* REST */ = {
-			isa = PBXGroup;
-			children = (
-				49A111A82748D8AD0026E622 /* Endpoints.swift */,
-			);
-			path = REST;
-			sourceTree = "<group>";
-		};
-		49FB1EF528300A94000C7CA4 /* Data Objects */ = {
-			isa = PBXGroup;
-			children = (
-				49A111A62748D0ED0026E622 /* DataObjects.swift */,
-				49FB1EE9282FB415000C7CA4 /* ServerStatus.swift */,
-			);
-			path = "Data Objects";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,7 +161,7 @@
 			);
 			name = "Celibi Gardener";
 			packageProductDependencies = (
-				491EBD3D28390D560050FDEF /* Alamofire */,
+				49A81B1F2BD521F80095D7A4 /* AWSIoT */,
 			);
 			productName = "Celibi Gardener";
 			productReference = 4981742227464F3100B6C8C4 /* Celibi Gardener.app */;
@@ -269,7 +236,7 @@
 			);
 			mainGroup = 4981741927464F3100B6C8C4;
 			packageReferences = (
-				491EBD3C28390D560050FDEF /* XCRemoteSwiftPackageReference "Alamofire" */,
+				49A81B1E2BD521F80095D7A4 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */,
 			);
 			productRefGroup = 4981742327464F3100B6C8C4 /* Products */;
 			projectDirPath = "";
@@ -289,6 +256,7 @@
 			files = (
 				4981742D27464F3300B6C8C4 /* Preview Assets.xcassets in Resources */,
 				4981742A27464F3300B6C8C4 /* Assets.xcassets in Resources */,
+				49A81B1B2BD4FD7D0095D7A4 /* secrets.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,15 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49FB1EEA282FB415000C7CA4 /* ServerStatus.swift in Sources */,
+				49A81B222BD5227E0095D7A4 /* AuthenticationManager.swift in Sources */,
+				49A81B282BD55A930095D7A4 /* Configurations.swift in Sources */,
+				49A81B242BD540AD0095D7A4 /* MQTTManager.swift in Sources */,
+				49A81B262BD541760095D7A4 /* MQTTMessage.swift in Sources */,
 				4981742827464F3100B6C8C4 /* ContentView.swift in Sources */,
-				49FB1EF1282FF8DD000C7CA4 /* ManualView.swift in Sources */,
-				49FB1EEF282FF8CA000C7CA4 /* TimersView.swift in Sources */,
-				49A111A72748D0ED0026E622 /* DataObjects.swift in Sources */,
-				49FB1EF328300906000C7CA4 /* CreateNewAlarmFormView.swift in Sources */,
-				49FB1EE8282FB1B2000C7CA4 /* secrets.swift in Sources */,
-				49FB1EED282FBAB3000C7CA4 /* ServerStatusView.swift in Sources */,
-				49A111A92748D8AD0026E622 /* Endpoints.swift in Sources */,
 				4981742627464F3100B6C8C4 /* Celibi_GardenerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -465,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -490,9 +454,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,6 +463,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "teamaddis.Celibi-Gardener";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -521,9 +487,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -531,6 +496,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "teamaddis.Celibi-Gardener";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -546,7 +514,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K7242UDDNB;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,7 +539,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K7242UDDNB;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -595,6 +563,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K7242UDDNB;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -618,6 +587,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K7242UDDNB;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -675,21 +645,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		491EBD3C28390D560050FDEF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		49A81B1E2BD521F80095D7A4 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire#installation";
+			repositoryURL = "https://github.com/aws-amplify/aws-sdk-ios-spm";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				minimumVersion = 2.35.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		491EBD3D28390D560050FDEF /* Alamofire */ = {
+		49A81B1F2BD521F80095D7A4 /* AWSIoT */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 491EBD3C28390D560050FDEF /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
+			package = 49A81B1E2BD521F80095D7A4 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSIoT;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
