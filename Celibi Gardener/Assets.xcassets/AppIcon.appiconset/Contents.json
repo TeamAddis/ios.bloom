@@ -1,41 +1,55 @@
 {
   "images" : [
     {
+      "filename" : "appicon-iPad20@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
+      "filename" : "appicon-iPhone20@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
+      "filename" : "appicon-iPad29.png",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "appicon-iPad29@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
+      "filename" : "appicon-iPhone29@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
+      "filename" : "appicon-iPad40@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
+      "filename" : "appicon-iPhone40@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
+      "filename" : "appicon-iPhone60@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
+      "filename" : "appicon-iPhone60@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -86,9 +100,65 @@
       "size" : "83.5x83.5"
     },
     {
+      "filename" : "appicon-AppStore-1.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
+    },
+    {
+      "filename" : "appicon-AppStore.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "appicon-iPad76@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "appicon-iPhone20@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "20x20",
+      "unassigned" : true
+    },
+    {
+      "filename" : "appicon-iPhone29@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "29x29",
+      "unassigned" : true
+    },
+    {
+      "filename" : "appicon-iPhone40@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "40x40",
+      "unassigned" : true
+    },
+    {
+      "filename" : "appicon-iPad20.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "appicon-iPad40.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "appicon-iPad76.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "unassigned" : true
+    },
+    {
+      "filename" : "appicon-iPad83@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "unassigned" : true
     }
   ],
   "info" : {

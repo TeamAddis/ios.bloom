@@ -1,13 +1,13 @@
 {
-  "originHash" : "0ab9305815c534c9369156ce77bd7c2e16029f70ca2d8e96f9885deb84a8646f",
+  "originHash" : "1766aeaa4acc33f51d4721e47b2c6baa3fd79fb263a4ecce86c0c021e05d81cc",
   "pins" : [
     {
-      "identity" : "alamofire#installation",
+      "identity" : "aws-sdk-ios-spm",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Alamofire/Alamofire#installation",
+      "location" : "https://github.com/aws-amplify/aws-sdk-ios-spm",
       "state" : {
-        "branch" : "master",
-        "revision" : "f455c2975872ccd2d9c81594c658af65716e9b9a"
+        "revision" : "6e23b91609f9ddf988fda58bf711896a6062d4ff",
+        "version" : "2.35.0"
       }
     }
   ],
