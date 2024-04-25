@@ -14,7 +14,7 @@
 		4981743727464F3300B6C8C4 /* Celibi_GardenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981743627464F3300B6C8C4 /* Celibi_GardenerTests.swift */; };
 		4981744127464F3300B6C8C4 /* Celibi_GardenerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744027464F3300B6C8C4 /* Celibi_GardenerUITests.swift */; };
 		4981744327464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744227464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift */; };
-		49A81B1B2BD4FD7D0095D7A4 /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49A81B1A2BD4FD7D0095D7A4 /* secrets.plist */; };
+		49A65B8A2BDA0652000D6C28 /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49A65B892BDA0652000D6C28 /* secrets.plist */; };
 		49A81B202BD521F80095D7A4 /* AWSIoT in Frameworks */ = {isa = PBXBuildFile; productRef = 49A81B1F2BD521F80095D7A4 /* AWSIoT */; };
 		49A81B222BD5227E0095D7A4 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A81B212BD5227E0095D7A4 /* AuthenticationManager.swift */; };
 		49A81B242BD540AD0095D7A4 /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A81B232BD540AD0095D7A4 /* MQTTManager.swift */; };
@@ -50,7 +50,7 @@
 		4981743C27464F3300B6C8C4 /* Celibi GardenerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Celibi GardenerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4981744027464F3300B6C8C4 /* Celibi_GardenerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celibi_GardenerUITests.swift; sourceTree = "<group>"; };
 		4981744227464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celibi_GardenerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		49A81B1A2BD4FD7D0095D7A4 /* secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = secrets.plist; sourceTree = "<group>"; };
+		49A65B892BDA0652000D6C28 /* secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = secrets.plist; sourceTree = "<group>"; };
 		49A81B212BD5227E0095D7A4 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		49A81B232BD540AD0095D7A4 /* MQTTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
 		49A81B252BD541760095D7A4 /* MQTTMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTMessage.swift; sourceTree = "<group>"; };
@@ -110,11 +110,11 @@
 				4981742527464F3100B6C8C4 /* Celibi_GardenerApp.swift */,
 				4981742927464F3300B6C8C4 /* Assets.xcassets */,
 				4981742B27464F3300B6C8C4 /* Preview Content */,
-				49A81B1A2BD4FD7D0095D7A4 /* secrets.plist */,
 				49A81B212BD5227E0095D7A4 /* AuthenticationManager.swift */,
 				49A81B232BD540AD0095D7A4 /* MQTTManager.swift */,
 				49A81B252BD541760095D7A4 /* MQTTMessage.swift */,
 				49A81B272BD55A930095D7A4 /* Configurations.swift */,
+				49A65B892BDA0652000D6C28 /* secrets.plist */,
 			);
 			path = "Celibi Gardener";
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 			files = (
 				4981742D27464F3300B6C8C4 /* Preview Assets.xcassets in Resources */,
 				4981742A27464F3300B6C8C4 /* Assets.xcassets in Resources */,
-				49A81B1B2BD4FD7D0095D7A4 /* secrets.plist in Resources */,
+				49A65B8A2BDA0652000D6C28 /* secrets.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
