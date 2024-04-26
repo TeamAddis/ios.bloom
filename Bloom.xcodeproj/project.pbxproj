@@ -3,17 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4981742627464F3100B6C8C4 /* Celibi_GardenerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981742527464F3100B6C8C4 /* Celibi_GardenerApp.swift */; };
+		4981742627464F3100B6C8C4 /* BloomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981742527464F3100B6C8C4 /* BloomApp.swift */; };
 		4981742827464F3100B6C8C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981742727464F3100B6C8C4 /* ContentView.swift */; };
 		4981742A27464F3300B6C8C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4981742927464F3300B6C8C4 /* Assets.xcassets */; };
 		4981742D27464F3300B6C8C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4981742C27464F3300B6C8C4 /* Preview Assets.xcassets */; };
-		4981743727464F3300B6C8C4 /* Celibi_GardenerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981743627464F3300B6C8C4 /* Celibi_GardenerTests.swift */; };
-		4981744127464F3300B6C8C4 /* Celibi_GardenerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744027464F3300B6C8C4 /* Celibi_GardenerUITests.swift */; };
-		4981744327464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744227464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift */; };
+		4981743727464F3300B6C8C4 /* BloomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981743627464F3300B6C8C4 /* BloomTests.swift */; };
+		4981744127464F3300B6C8C4 /* BloomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744027464F3300B6C8C4 /* BloomUITests.swift */; };
+		4981744327464F3300B6C8C4 /* BloomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744227464F3300B6C8C4 /* BloomUITestsLaunchTests.swift */; };
 		49A65B8A2BDA0652000D6C28 /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49A65B892BDA0652000D6C28 /* secrets.plist */; };
 		49A81B202BD521F80095D7A4 /* AWSIoT in Frameworks */ = {isa = PBXBuildFile; productRef = 49A81B1F2BD521F80095D7A4 /* AWSIoT */; };
 		49A81B222BD5227E0095D7A4 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A81B212BD5227E0095D7A4 /* AuthenticationManager.swift */; };
@@ -40,16 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4981742227464F3100B6C8C4 /* Celibi Gardener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Celibi Gardener.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4981742527464F3100B6C8C4 /* Celibi_GardenerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celibi_GardenerApp.swift; sourceTree = "<group>"; };
+		4981742227464F3100B6C8C4 /* Bloom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bloom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4981742527464F3100B6C8C4 /* BloomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomApp.swift; sourceTree = "<group>"; };
 		4981742727464F3100B6C8C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4981742927464F3300B6C8C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4981742C27464F3300B6C8C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4981743227464F3300B6C8C4 /* Celibi GardenerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Celibi GardenerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4981743627464F3300B6C8C4 /* Celibi_GardenerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celibi_GardenerTests.swift; sourceTree = "<group>"; };
-		4981743C27464F3300B6C8C4 /* Celibi GardenerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Celibi GardenerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4981744027464F3300B6C8C4 /* Celibi_GardenerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celibi_GardenerUITests.swift; sourceTree = "<group>"; };
-		4981744227464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celibi_GardenerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4981743227464F3300B6C8C4 /* BloomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4981743627464F3300B6C8C4 /* BloomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomTests.swift; sourceTree = "<group>"; };
+		4981743C27464F3300B6C8C4 /* BloomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4981744027464F3300B6C8C4 /* BloomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomUITests.swift; sourceTree = "<group>"; };
+		4981744227464F3300B6C8C4 /* BloomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		49A65B892BDA0652000D6C28 /* secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = secrets.plist; sourceTree = "<group>"; };
 		49A81B212BD5227E0095D7A4 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		49A81B232BD540AD0095D7A4 /* MQTTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
@@ -86,9 +86,9 @@
 		4981741927464F3100B6C8C4 = {
 			isa = PBXGroup;
 			children = (
-				4981742427464F3100B6C8C4 /* Celibi Gardener */,
-				4981743527464F3300B6C8C4 /* Celibi GardenerTests */,
-				4981743F27464F3300B6C8C4 /* Celibi GardenerUITests */,
+				4981742427464F3100B6C8C4 /* Bloom */,
+				4981743527464F3300B6C8C4 /* BloomTests */,
+				4981743F27464F3300B6C8C4 /* BloomUITests */,
 				4981742327464F3100B6C8C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,18 +96,18 @@
 		4981742327464F3100B6C8C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4981742227464F3100B6C8C4 /* Celibi Gardener.app */,
-				4981743227464F3300B6C8C4 /* Celibi GardenerTests.xctest */,
-				4981743C27464F3300B6C8C4 /* Celibi GardenerUITests.xctest */,
+				4981742227464F3100B6C8C4 /* Bloom.app */,
+				4981743227464F3300B6C8C4 /* BloomTests.xctest */,
+				4981743C27464F3300B6C8C4 /* BloomUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4981742427464F3100B6C8C4 /* Celibi Gardener */ = {
+		4981742427464F3100B6C8C4 /* Bloom */ = {
 			isa = PBXGroup;
 			children = (
 				4981742727464F3100B6C8C4 /* ContentView.swift */,
-				4981742527464F3100B6C8C4 /* Celibi_GardenerApp.swift */,
+				4981742527464F3100B6C8C4 /* BloomApp.swift */,
 				4981742927464F3300B6C8C4 /* Assets.xcassets */,
 				4981742B27464F3300B6C8C4 /* Preview Content */,
 				49A81B212BD5227E0095D7A4 /* AuthenticationManager.swift */,
@@ -116,7 +116,7 @@
 				49A81B272BD55A930095D7A4 /* Configurations.swift */,
 				49A65B892BDA0652000D6C28 /* secrets.plist */,
 			);
-			path = "Celibi Gardener";
+			path = Bloom;
 			sourceTree = "<group>";
 		};
 		4981742B27464F3300B6C8C4 /* Preview Content */ = {
@@ -127,29 +127,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		4981743527464F3300B6C8C4 /* Celibi GardenerTests */ = {
+		4981743527464F3300B6C8C4 /* BloomTests */ = {
 			isa = PBXGroup;
 			children = (
-				4981743627464F3300B6C8C4 /* Celibi_GardenerTests.swift */,
+				4981743627464F3300B6C8C4 /* BloomTests.swift */,
 			);
-			path = "Celibi GardenerTests";
+			path = BloomTests;
 			sourceTree = "<group>";
 		};
-		4981743F27464F3300B6C8C4 /* Celibi GardenerUITests */ = {
+		4981743F27464F3300B6C8C4 /* BloomUITests */ = {
 			isa = PBXGroup;
 			children = (
-				4981744027464F3300B6C8C4 /* Celibi_GardenerUITests.swift */,
-				4981744227464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift */,
+				4981744027464F3300B6C8C4 /* BloomUITests.swift */,
+				4981744227464F3300B6C8C4 /* BloomUITestsLaunchTests.swift */,
 			);
-			path = "Celibi GardenerUITests";
+			path = BloomUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4981742127464F3100B6C8C4 /* Celibi Gardener */ = {
+		4981742127464F3100B6C8C4 /* Bloom */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4981744627464F3300B6C8C4 /* Build configuration list for PBXNativeTarget "Celibi Gardener" */;
+			buildConfigurationList = 4981744627464F3300B6C8C4 /* Build configuration list for PBXNativeTarget "Bloom" */;
 			buildPhases = (
 				4981741E27464F3100B6C8C4 /* Sources */,
 				4981741F27464F3100B6C8C4 /* Frameworks */,
@@ -159,17 +159,17 @@
 			);
 			dependencies = (
 			);
-			name = "Celibi Gardener";
+			name = Bloom;
 			packageProductDependencies = (
 				49A81B1F2BD521F80095D7A4 /* AWSIoT */,
 			);
 			productName = "Celibi Gardener";
-			productReference = 4981742227464F3100B6C8C4 /* Celibi Gardener.app */;
+			productReference = 4981742227464F3100B6C8C4 /* Bloom.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4981743127464F3300B6C8C4 /* Celibi GardenerTests */ = {
+		4981743127464F3300B6C8C4 /* BloomTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4981744927464F3300B6C8C4 /* Build configuration list for PBXNativeTarget "Celibi GardenerTests" */;
+			buildConfigurationList = 4981744927464F3300B6C8C4 /* Build configuration list for PBXNativeTarget "BloomTests" */;
 			buildPhases = (
 				4981742E27464F3300B6C8C4 /* Sources */,
 				4981742F27464F3300B6C8C4 /* Frameworks */,
@@ -180,14 +180,14 @@
 			dependencies = (
 				4981743427464F3300B6C8C4 /* PBXTargetDependency */,
 			);
-			name = "Celibi GardenerTests";
+			name = BloomTests;
 			productName = "Celibi GardenerTests";
-			productReference = 4981743227464F3300B6C8C4 /* Celibi GardenerTests.xctest */;
+			productReference = 4981743227464F3300B6C8C4 /* BloomTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4981743B27464F3300B6C8C4 /* Celibi GardenerUITests */ = {
+		4981743B27464F3300B6C8C4 /* BloomUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4981744C27464F3300B6C8C4 /* Build configuration list for PBXNativeTarget "Celibi GardenerUITests" */;
+			buildConfigurationList = 4981744C27464F3300B6C8C4 /* Build configuration list for PBXNativeTarget "BloomUITests" */;
 			buildPhases = (
 				4981743827464F3300B6C8C4 /* Sources */,
 				4981743927464F3300B6C8C4 /* Frameworks */,
@@ -198,9 +198,9 @@
 			dependencies = (
 				4981743E27464F3300B6C8C4 /* PBXTargetDependency */,
 			);
-			name = "Celibi GardenerUITests";
+			name = BloomUITests;
 			productName = "Celibi GardenerUITests";
-			productReference = 4981743C27464F3300B6C8C4 /* Celibi GardenerUITests.xctest */;
+			productReference = 4981743C27464F3300B6C8C4 /* BloomUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -226,8 +226,8 @@
 					};
 				};
 			};
-			buildConfigurationList = 4981741D27464F3100B6C8C4 /* Build configuration list for PBXProject "Celibi Gardener" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = 4981741D27464F3100B6C8C4 /* Build configuration list for PBXProject "Bloom" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -242,9 +242,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4981742127464F3100B6C8C4 /* Celibi Gardener */,
-				4981743127464F3300B6C8C4 /* Celibi GardenerTests */,
-				4981743B27464F3300B6C8C4 /* Celibi GardenerUITests */,
+				4981742127464F3100B6C8C4 /* Bloom */,
+				4981743127464F3300B6C8C4 /* BloomTests */,
+				4981743B27464F3300B6C8C4 /* BloomUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -286,7 +286,7 @@
 				49A81B242BD540AD0095D7A4 /* MQTTManager.swift in Sources */,
 				49A81B262BD541760095D7A4 /* MQTTMessage.swift in Sources */,
 				4981742827464F3100B6C8C4 /* ContentView.swift in Sources */,
-				4981742627464F3100B6C8C4 /* Celibi_GardenerApp.swift in Sources */,
+				4981742627464F3100B6C8C4 /* BloomApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4981743727464F3300B6C8C4 /* Celibi_GardenerTests.swift in Sources */,
+				4981743727464F3300B6C8C4 /* BloomTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4981744327464F3300B6C8C4 /* Celibi_GardenerUITestsLaunchTests.swift in Sources */,
-				4981744127464F3300B6C8C4 /* Celibi_GardenerUITests.swift in Sources */,
+				4981744327464F3300B6C8C4 /* BloomUITestsLaunchTests.swift in Sources */,
+				4981744127464F3300B6C8C4 /* BloomUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,12 +312,12 @@
 /* Begin PBXTargetDependency section */
 		4981743427464F3300B6C8C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4981742127464F3100B6C8C4 /* Celibi Gardener */;
+			target = 4981742127464F3100B6C8C4 /* Bloom */;
 			targetProxy = 4981743327464F3300B6C8C4 /* PBXContainerItemProxy */;
 		};
 		4981743E27464F3300B6C8C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4981742127464F3100B6C8C4 /* Celibi Gardener */;
+			target = 4981742127464F3100B6C8C4 /* Bloom */;
 			targetProxy = 4981743D27464F3300B6C8C4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -446,7 +446,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Celibi Gardener/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Bloom/Preview Content\"";
 				DEVELOPMENT_TEAM = K7242UDDNB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -461,7 +461,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "teamaddis.Celibi-Gardener";
+				PRODUCT_BUNDLE_IDENTIFIER = teamaddis.bloom.ios.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -479,7 +479,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Celibi Gardener/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Bloom/Preview Content\"";
 				DEVELOPMENT_TEAM = K7242UDDNB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -494,7 +494,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "teamaddis.Celibi-Gardener";
+				PRODUCT_BUNDLE_IDENTIFIER = teamaddis.bloom.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -521,12 +521,12 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "teamaddis.Celibi-GardenerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = teamaddis.BloomTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Celibi Gardener.app/Celibi Gardener";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bloom.app/Bloom";
 			};
 			name = Debug;
 		};
@@ -546,12 +546,12 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "teamaddis.Celibi-GardenerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = teamaddis.BloomTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Celibi Gardener.app/Celibi Gardener";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bloom.app/Bloom";
 			};
 			name = Release;
 		};
@@ -570,7 +570,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "teamaddis.Celibi-GardenerUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = teamaddis.BloomUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -594,7 +594,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "teamaddis.Celibi-GardenerUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = teamaddis.BloomUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -606,7 +606,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4981741D27464F3100B6C8C4 /* Build configuration list for PBXProject "Celibi Gardener" */ = {
+		4981741D27464F3100B6C8C4 /* Build configuration list for PBXProject "Bloom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4981744427464F3300B6C8C4 /* Debug */,
@@ -615,7 +615,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4981744627464F3300B6C8C4 /* Build configuration list for PBXNativeTarget "Celibi Gardener" */ = {
+		4981744627464F3300B6C8C4 /* Build configuration list for PBXNativeTarget "Bloom" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4981744727464F3300B6C8C4 /* Debug */,
@@ -624,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4981744927464F3300B6C8C4 /* Build configuration list for PBXNativeTarget "Celibi GardenerTests" */ = {
+		4981744927464F3300B6C8C4 /* Build configuration list for PBXNativeTarget "BloomTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4981744A27464F3300B6C8C4 /* Debug */,
@@ -633,7 +633,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4981744C27464F3300B6C8C4 /* Build configuration list for PBXNativeTarget "Celibi GardenerUITests" */ = {
+		4981744C27464F3300B6C8C4 /* Build configuration list for PBXNativeTarget "BloomUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4981744D27464F3300B6C8C4 /* Debug */,

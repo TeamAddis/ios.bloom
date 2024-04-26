@@ -1,6 +1,6 @@
 //
 //  MQTTMessage.swift
-//  Celibi Gardener
+//  Bloom
 //
 //  Created by Andrew Addis on 2024/04/21.
 //

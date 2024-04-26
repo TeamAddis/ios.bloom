@@ -1,14 +1,14 @@
 //
-//  Celibi_GardenerTests.swift
-//  Celibi GardenerTests
+//  BloomTests.swift
+//  BloomTests
 //
 //  Created by Andrew Addis on 2021/11/18.
 //
 
 import XCTest
-@testable import Celibi_Gardener
+@testable import Bloom
 
-class Celibi_GardenerTests: XCTestCase {
+class BloomTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

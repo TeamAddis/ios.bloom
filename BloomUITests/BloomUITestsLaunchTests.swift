@@ -1,13 +1,13 @@
 //
-//  Celibi_GardenerUITestsLaunchTests.swift
-//  Celibi GardenerUITests
+//  BloomUITestsLaunchTests.swift
+//  BloomUITests
 //
 //  Created by Andrew Addis on 2021/11/18.
 //
 
 import XCTest
 
-class Celibi_GardenerUITestsLaunchTests: XCTestCase {
+class BloomUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
