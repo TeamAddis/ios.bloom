@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491499412C74761500C8B130 /* MQTTTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491499402C74761500C8B130 /* MQTTTopic.swift */; };
+		491499432C747A4300C8B130 /* StatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491499422C747A4300C8B130 /* StatusManager.swift */; };
 		4981742627464F3100B6C8C4 /* BloomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981742527464F3100B6C8C4 /* BloomApp.swift */; };
 		4981742827464F3100B6C8C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981742727464F3100B6C8C4 /* ContentView.swift */; };
 		4981742A27464F3300B6C8C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4981742927464F3300B6C8C4 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		491499402C74761500C8B130 /* MQTTTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTTopic.swift; sourceTree = "<group>"; };
+		491499422C747A4300C8B130 /* StatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusManager.swift; sourceTree = "<group>"; };
 		4981742227464F3100B6C8C4 /* Bloom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bloom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4981742527464F3100B6C8C4 /* BloomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomApp.swift; sourceTree = "<group>"; };
 		4981742727464F3100B6C8C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,8 +115,10 @@
 				4981742927464F3300B6C8C4 /* Assets.xcassets */,
 				4981742B27464F3300B6C8C4 /* Preview Content */,
 				49A81B212BD5227E0095D7A4 /* AuthenticationManager.swift */,
+				491499422C747A4300C8B130 /* StatusManager.swift */,
 				49A81B232BD540AD0095D7A4 /* MQTTManager.swift */,
 				49A81B252BD541760095D7A4 /* MQTTMessage.swift */,
+				491499402C74761500C8B130 /* MQTTTopic.swift */,
 				49A81B272BD55A930095D7A4 /* Configurations.swift */,
 				49A65B892BDA0652000D6C28 /* secrets.plist */,
 			);
@@ -282,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A81B222BD5227E0095D7A4 /* AuthenticationManager.swift in Sources */,
+				491499432C747A4300C8B130 /* StatusManager.swift in Sources */,
+				491499412C74761500C8B130 /* MQTTTopic.swift in Sources */,
 				49A81B282BD55A930095D7A4 /* Configurations.swift in Sources */,
 				49A81B242BD540AD0095D7A4 /* MQTTManager.swift in Sources */,
 				49A81B262BD541760095D7A4 /* MQTTMessage.swift in Sources */,

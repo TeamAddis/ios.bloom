@@ -11,11 +11,14 @@ import AWSIoT
 class MQTTManager: ObservableObject {
     static let shared = MQTTManager()
     
-    let topic = "celebi/manual_pump"
+    private let dataManager: AWSIoTDataManager
     
-    func publishMQTTMessage(message: MQTTMessage) {
-        let dataManager = AWSIoTDataManager(forKey: "aDataManager")
-        
+    private init() {
+        dataManager = AWSIoTDataManager(forKey: "aDataManager")
+        setupSubscriptions()
+    }
+    
+    func publishMQTTMessage(topic: MQTTTopic, message: MQTTMessage) {
         // Convert the message to JSON
         let encoder = JSONEncoder()
         guard let data = try? encoder.encode(message),
@@ -24,7 +27,14 @@ class MQTTManager: ObservableObject {
             return
         }
         
-        dataManager.publishString(messageString, onTopic: topic, qoS: .messageDeliveryAttemptedAtLeastOnce)
+        dataManager.publishString(messageString, onTopic: topic.rawValue, qoS: .messageDeliveryAttemptedAtLeastOnce)
         print("sending \(message.message) to topic \(topic)")
+    }
+    
+    private func setupSubscriptions() {
+        // Subscribe to topics
+        dataManager.subscribe(toTopic: MQTTTopic.status.rawValue, qoS: .messageDeliveryAttemptedAtLeastOnce, messageCallback: {payload in
+            StatusManager.shared.handleStatusUpdate(data: payload)
+        })
     }
 }

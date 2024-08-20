@@ -8,12 +8,15 @@
 import Foundation
 import AWSIoT
 
-
+enum AWSIoTStatus: String {
+    case connected = "Connected"
+    case notConnected = "Not Connected"
+}
 
 class AuthenticationManager: ObservableObject {
     static let shared = AuthenticationManager()
     
-    @Published var isConnected: Bool = false
+    @Published var awsiotStatus: AWSIoTStatus = .notConnected
     
     private(set) var identityPoolId: String = ""
     private(set) var clientId: String = ""
@@ -55,7 +58,7 @@ class AuthenticationManager: ObservableObject {
             case .connected:
                 print("Connected to AWS IoT")
                 DispatchQueue.main.async {
-                    self.isConnected = true
+                    self.awsiotStatus = .connected
                 }
             case .connectionError: print("AWS IoT connection error")
             case .connectionRefused: print("AWS IoT connection refused")
