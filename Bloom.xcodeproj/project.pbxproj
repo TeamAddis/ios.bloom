@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		491499412C74761500C8B130 /* MQTTTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491499402C74761500C8B130 /* MQTTTopic.swift */; };
 		491499432C747A4300C8B130 /* StatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491499422C747A4300C8B130 /* StatusManager.swift */; };
 		496126502F8375B900A4BC32 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961264F2F83759100A4BC32 /* APIClient.swift */; };
 		496126552F83761600A4BC32 /* PumpModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496126542F8375F300A4BC32 /* PumpModels.swift */; };
@@ -15,6 +14,8 @@
 		4961265A2F83765D00A4BC32 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496126592F83765400A4BC32 /* ConfigurationService.swift */; };
 		4961265C2F8376AB00A4BC32 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961265B2F8376AB00A4BC32 /* APIClientTests.swift */; };
 		4961265F2F83781D00A4BC32 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4961265E2F83781D00A4BC32 /* Alamofire */; };
+		496126612F8386E100A4BC32 /* ApiClientModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496126602F8386E100A4BC32 /* ApiClientModelTests.swift */; };
+		496126652F83878600A4BC32 /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 496126642F83878600A4BC32 /* secrets.plist */; };
 		4981742627464F3100B6C8C4 /* BloomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981742527464F3100B6C8C4 /* BloomApp.swift */; };
 		4981742827464F3100B6C8C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981742727464F3100B6C8C4 /* ContentView.swift */; };
 		4981742A27464F3300B6C8C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4981742927464F3300B6C8C4 /* Assets.xcassets */; };
@@ -22,10 +23,6 @@
 		4981743727464F3300B6C8C4 /* BloomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981743627464F3300B6C8C4 /* BloomTests.swift */; };
 		4981744127464F3300B6C8C4 /* BloomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744027464F3300B6C8C4 /* BloomUITests.swift */; };
 		4981744327464F3300B6C8C4 /* BloomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744227464F3300B6C8C4 /* BloomUITestsLaunchTests.swift */; };
-		49A65B8A2BDA0652000D6C28 /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49A65B892BDA0652000D6C28 /* secrets.plist */; };
-		49A81B222BD5227E0095D7A4 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A81B212BD5227E0095D7A4 /* AuthenticationManager.swift */; };
-		49A81B242BD540AD0095D7A4 /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A81B232BD540AD0095D7A4 /* MQTTManager.swift */; };
-		49A81B262BD541760095D7A4 /* MQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A81B252BD541760095D7A4 /* MQTTMessage.swift */; };
 		49A81B282BD55A930095D7A4 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A81B272BD55A930095D7A4 /* Configurations.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,13 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		491499402C74761500C8B130 /* MQTTTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTTopic.swift; sourceTree = "<group>"; };
 		491499422C747A4300C8B130 /* StatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusManager.swift; sourceTree = "<group>"; };
 		4961264F2F83759100A4BC32 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		496126542F8375F300A4BC32 /* PumpModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PumpModels.swift; sourceTree = "<group>"; };
 		496126572F83763700A4BC32 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		496126592F83765400A4BC32 /* ConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
 		4961265B2F8376AB00A4BC32 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		496126602F8386E100A4BC32 /* ApiClientModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientModelTests.swift; sourceTree = "<group>"; };
+		496126642F83878600A4BC32 /* secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = secrets.plist; sourceTree = "<group>"; };
 		4981742227464F3100B6C8C4 /* Bloom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bloom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4981742527464F3100B6C8C4 /* BloomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomApp.swift; sourceTree = "<group>"; };
 		4981742727464F3100B6C8C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,10 +62,6 @@
 		4981743C27464F3300B6C8C4 /* BloomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4981744027464F3300B6C8C4 /* BloomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomUITests.swift; sourceTree = "<group>"; };
 		4981744227464F3300B6C8C4 /* BloomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		49A65B892BDA0652000D6C28 /* secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = secrets.plist; sourceTree = "<group>"; };
-		49A81B212BD5227E0095D7A4 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
-		49A81B232BD540AD0095D7A4 /* MQTTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
-		49A81B252BD541760095D7A4 /* MQTTMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTMessage.swift; sourceTree = "<group>"; };
 		49A81B272BD55A930095D7A4 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,13 +138,9 @@
 				4981742527464F3100B6C8C4 /* BloomApp.swift */,
 				4981742927464F3300B6C8C4 /* Assets.xcassets */,
 				4981742B27464F3300B6C8C4 /* Preview Content */,
-				49A81B212BD5227E0095D7A4 /* AuthenticationManager.swift */,
 				491499422C747A4300C8B130 /* StatusManager.swift */,
-				49A81B232BD540AD0095D7A4 /* MQTTManager.swift */,
-				49A81B252BD541760095D7A4 /* MQTTMessage.swift */,
-				491499402C74761500C8B130 /* MQTTTopic.swift */,
 				49A81B272BD55A930095D7A4 /* Configurations.swift */,
-				49A65B892BDA0652000D6C28 /* secrets.plist */,
+				496126642F83878600A4BC32 /* secrets.plist */,
 			);
 			path = Bloom;
 			sourceTree = "<group>";
@@ -166,6 +156,8 @@
 		4981743527464F3300B6C8C4 /* BloomTests */ = {
 			isa = PBXGroup;
 			children = (
+				496126602F8386E100A4BC32 /* ApiClientModelTests.swift */,
+				4961265B2F8376AB00A4BC32 /* APIClientTests.swift */,
 				4981743627464F3300B6C8C4 /* BloomTests.swift */,
 			);
 			path = BloomTests;
@@ -176,7 +168,6 @@
 			children = (
 				4981744027464F3300B6C8C4 /* BloomUITests.swift */,
 				4981744227464F3300B6C8C4 /* BloomUITestsLaunchTests.swift */,
-				4961265B2F8376AB00A4BC32 /* APIClientTests.swift */,
 			);
 			path = BloomUITests;
 			sourceTree = "<group>";
@@ -293,7 +284,7 @@
 			files = (
 				4981742D27464F3300B6C8C4 /* Preview Assets.xcassets in Resources */,
 				4981742A27464F3300B6C8C4 /* Assets.xcassets in Resources */,
-				49A65B8A2BDA0652000D6C28 /* secrets.plist in Resources */,
+				496126652F83878600A4BC32 /* secrets.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,15 +309,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49A81B222BD5227E0095D7A4 /* AuthenticationManager.swift in Sources */,
 				491499432C747A4300C8B130 /* StatusManager.swift in Sources */,
-				491499412C74761500C8B130 /* MQTTTopic.swift in Sources */,
 				496126552F83761600A4BC32 /* PumpModels.swift in Sources */,
 				496126582F83764200A4BC32 /* KeychainService.swift in Sources */,
 				49A81B282BD55A930095D7A4 /* Configurations.swift in Sources */,
 				4961265A2F83765D00A4BC32 /* ConfigurationService.swift in Sources */,
-				49A81B242BD540AD0095D7A4 /* MQTTManager.swift in Sources */,
-				49A81B262BD541760095D7A4 /* MQTTMessage.swift in Sources */,
 				4981742827464F3100B6C8C4 /* ContentView.swift in Sources */,
 				4981742627464F3100B6C8C4 /* BloomApp.swift in Sources */,
 				496126502F8375B900A4BC32 /* APIClient.swift in Sources */,
@@ -338,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4981743727464F3300B6C8C4 /* BloomTests.swift in Sources */,
+				496126612F8386E100A4BC32 /* ApiClientModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

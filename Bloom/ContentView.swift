@@ -8,18 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var authenticationManager = AuthenticationManager.shared
     @ObservedObject var statusManager = StatusManager.shared
     
 
     var body: some View {
         VStack {
-            // Display the AWS IoT connection status only if it is "Not Connected"
-            if authenticationManager.awsiotStatus == .notConnected {
-                Text("AWS IoT Status: \(authenticationManager.awsiotStatus.rawValue)")
-                    .padding()
-            }
-            
             // Display the current controller status
             Text("Controller Status: \(statusManager.controllerStatus.rawValue)")
                 .padding()
