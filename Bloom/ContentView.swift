@@ -8,18 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var authenticationManager = AuthenticationManager.shared
     @ObservedObject var statusManager = StatusManager.shared
     
 
     var body: some View {
         VStack {
-            // Display the AWS IoT connection status only if it is "Not Connected"
-            if authenticationManager.awsiotStatus == .notConnected {
-                Text("AWS IoT Status: \(authenticationManager.awsiotStatus.rawValue)")
-                    .padding()
-            }
-            
             // Display the current controller status
             Text("Controller Status: \(statusManager.controllerStatus.rawValue)")
                 .padding()
@@ -48,8 +41,17 @@ struct ContentView: View {
             // Button to toggle the pump
             Button(action: {
                 let newStatus: PumpStatus = (statusManager.pumpStatus == .on) ? .off : .on
-                let message = MQTTMessage(message: newStatus.rawValue)
-                MQTTManager.shared.publishMQTTMessage(topic: MQTTTopic.manualPump,message: message)
+                let req = PumpControlRequest(state: (newStatus == .on) ? "on" : "off")
+                APIClient.shared.setPump(state: req) { result in
+                    switch result {
+                    case .success(let resp):
+                        DispatchQueue.main.async {
+                            statusManager.pumpStatus = (resp.status.lowercased() == "on" ? .on : .off)
+                        }
+                    case .failure(let err):
+                        print("setPump error: \(err)")
+                    }
+                }
             }) {
                 Text(statusManager.pumpStatus == .on ? "Turn Off" : "Turn On")
                     .padding()
