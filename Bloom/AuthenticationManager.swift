@@ -47,7 +47,9 @@ class AuthenticationManager: ObservableObject {
             return nil
         })
         
-        connectToAWSIoT()
+        // AWS IoT initialization is deprecated for local REST integration.
+        // Keep registration code in place for now, but do not auto-connect.
+        // connectToAWSIoT()
     }
     
     private func connectToAWSIoT() {

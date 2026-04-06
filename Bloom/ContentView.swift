@@ -48,8 +48,17 @@ struct ContentView: View {
             // Button to toggle the pump
             Button(action: {
                 let newStatus: PumpStatus = (statusManager.pumpStatus == .on) ? .off : .on
-                let message = MQTTMessage(message: newStatus.rawValue)
-                MQTTManager.shared.publishMQTTMessage(topic: MQTTTopic.manualPump,message: message)
+                let req = PumpControlRequest(state: (newStatus == .on) ? "on" : "off")
+                APIClient.shared.setPump(state: req) { result in
+                    switch result {
+                    case .success(let resp):
+                        DispatchQueue.main.async {
+                            statusManager.pumpStatus = (resp.status.lowercased() == "on" ? .on : .off)
+                        }
+                    case .failure(let err):
+                        print("setPump error: \(err)")
+                    }
+                }
             }) {
                 Text(statusManager.pumpStatus == .on ? "Turn Off" : "Turn On")
                     .padding()

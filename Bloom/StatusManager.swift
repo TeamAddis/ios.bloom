@@ -34,7 +34,20 @@ class StatusManager: ObservableObject {
     }
     
     func getControllerStatus() {
-        MQTTManager.shared.publishMQTTMessage(topic: .getStatus, message: MQTTMessage(message: ""))
+        APIClient.shared.getPumpStatus { result in
+            switch result {
+            case .success(let resp):
+                DispatchQueue.main.async {
+                    self.controllerStatus = .online
+                    self.pumpStatus = (resp.status.lowercased() == "on" ? .on : .off)
+                }
+            case .failure(let err):
+                print("API getPumpStatus error: \(err)")
+                DispatchQueue.main.async {
+                    self.controllerStatus = .offline
+                }
+            }
+        }
     }
     
     func handleStatusUpdate(data: Data) {
