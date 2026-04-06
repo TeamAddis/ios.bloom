@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		491499412C74761500C8B130 /* MQTTTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491499402C74761500C8B130 /* MQTTTopic.swift */; };
 		491499432C747A4300C8B130 /* StatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491499422C747A4300C8B130 /* StatusManager.swift */; };
+		496126502F8375B900A4BC32 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961264F2F83759100A4BC32 /* APIClient.swift */; };
+		496126552F83761600A4BC32 /* PumpModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496126542F8375F300A4BC32 /* PumpModels.swift */; };
+		496126582F83764200A4BC32 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496126572F83763700A4BC32 /* KeychainService.swift */; };
+		4961265A2F83765D00A4BC32 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496126592F83765400A4BC32 /* ConfigurationService.swift */; };
+		4961265C2F8376AB00A4BC32 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961265B2F8376AB00A4BC32 /* APIClientTests.swift */; };
+		4961265F2F83781D00A4BC32 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4961265E2F83781D00A4BC32 /* Alamofire */; };
 		4981742627464F3100B6C8C4 /* BloomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981742527464F3100B6C8C4 /* BloomApp.swift */; };
 		4981742827464F3100B6C8C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981742727464F3100B6C8C4 /* ContentView.swift */; };
 		4981742A27464F3300B6C8C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4981742927464F3300B6C8C4 /* Assets.xcassets */; };
@@ -17,7 +23,6 @@
 		4981744127464F3300B6C8C4 /* BloomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744027464F3300B6C8C4 /* BloomUITests.swift */; };
 		4981744327464F3300B6C8C4 /* BloomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981744227464F3300B6C8C4 /* BloomUITestsLaunchTests.swift */; };
 		49A65B8A2BDA0652000D6C28 /* secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49A65B892BDA0652000D6C28 /* secrets.plist */; };
-		49A81B202BD521F80095D7A4 /* AWSIoT in Frameworks */ = {isa = PBXBuildFile; productRef = 49A81B1F2BD521F80095D7A4 /* AWSIoT */; };
 		49A81B222BD5227E0095D7A4 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A81B212BD5227E0095D7A4 /* AuthenticationManager.swift */; };
 		49A81B242BD540AD0095D7A4 /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A81B232BD540AD0095D7A4 /* MQTTManager.swift */; };
 		49A81B262BD541760095D7A4 /* MQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A81B252BD541760095D7A4 /* MQTTMessage.swift */; };
@@ -44,6 +49,11 @@
 /* Begin PBXFileReference section */
 		491499402C74761500C8B130 /* MQTTTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTTopic.swift; sourceTree = "<group>"; };
 		491499422C747A4300C8B130 /* StatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusManager.swift; sourceTree = "<group>"; };
+		4961264F2F83759100A4BC32 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		496126542F8375F300A4BC32 /* PumpModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PumpModels.swift; sourceTree = "<group>"; };
+		496126572F83763700A4BC32 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		496126592F83765400A4BC32 /* ConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
+		4961265B2F8376AB00A4BC32 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
 		4981742227464F3100B6C8C4 /* Bloom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bloom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4981742527464F3100B6C8C4 /* BloomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloomApp.swift; sourceTree = "<group>"; };
 		4981742727464F3100B6C8C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49A81B202BD521F80095D7A4 /* AWSIoT in Frameworks */,
+				4961265F2F83781D00A4BC32 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +97,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		496126532F8375E600A4BC32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				496126542F8375F300A4BC32 /* PumpModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		496126562F83762800A4BC32 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				496126592F83765400A4BC32 /* ConfigurationService.swift */,
+				496126572F83763700A4BC32 /* KeychainService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4981741927464F3100B6C8C4 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +137,9 @@
 		4981742427464F3100B6C8C4 /* Bloom */ = {
 			isa = PBXGroup;
 			children = (
+				496126562F83762800A4BC32 /* Services */,
+				496126532F8375E600A4BC32 /* Models */,
+				4961264F2F83759100A4BC32 /* APIClient.swift */,
 				4981742727464F3100B6C8C4 /* ContentView.swift */,
 				4981742527464F3100B6C8C4 /* BloomApp.swift */,
 				4981742927464F3300B6C8C4 /* Assets.xcassets */,
@@ -146,6 +176,7 @@
 			children = (
 				4981744027464F3300B6C8C4 /* BloomUITests.swift */,
 				4981744227464F3300B6C8C4 /* BloomUITestsLaunchTests.swift */,
+				4961265B2F8376AB00A4BC32 /* APIClientTests.swift */,
 			);
 			path = BloomUITests;
 			sourceTree = "<group>";
@@ -167,7 +198,7 @@
 			);
 			name = Bloom;
 			packageProductDependencies = (
-				49A81B1F2BD521F80095D7A4 /* AWSIoT */,
+				4961265E2F83781D00A4BC32 /* Alamofire */,
 			);
 			productName = "Celibi Gardener";
 			productReference = 4981742227464F3100B6C8C4 /* Bloom.app */;
@@ -242,7 +273,7 @@
 			);
 			mainGroup = 4981741927464F3100B6C8C4;
 			packageReferences = (
-				49A81B1E2BD521F80095D7A4 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */,
+				4961265D2F83781D00A4BC32 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 4981742327464F3100B6C8C4 /* Products */;
 			projectDirPath = "";
@@ -290,11 +321,15 @@
 				49A81B222BD5227E0095D7A4 /* AuthenticationManager.swift in Sources */,
 				491499432C747A4300C8B130 /* StatusManager.swift in Sources */,
 				491499412C74761500C8B130 /* MQTTTopic.swift in Sources */,
+				496126552F83761600A4BC32 /* PumpModels.swift in Sources */,
+				496126582F83764200A4BC32 /* KeychainService.swift in Sources */,
 				49A81B282BD55A930095D7A4 /* Configurations.swift in Sources */,
+				4961265A2F83765D00A4BC32 /* ConfigurationService.swift in Sources */,
 				49A81B242BD540AD0095D7A4 /* MQTTManager.swift in Sources */,
 				49A81B262BD541760095D7A4 /* MQTTMessage.swift in Sources */,
 				4981742827464F3100B6C8C4 /* ContentView.swift in Sources */,
 				4981742627464F3100B6C8C4 /* BloomApp.swift in Sources */,
+				496126502F8375B900A4BC32 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4961265C2F8376AB00A4BC32 /* APIClientTests.swift in Sources */,
 				4981744327464F3300B6C8C4 /* BloomUITestsLaunchTests.swift in Sources */,
 				4981744127464F3300B6C8C4 /* BloomUITests.swift in Sources */,
 			);
@@ -653,21 +689,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		49A81B1E2BD521F80095D7A4 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */ = {
+		4961265D2F83781D00A4BC32 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/aws-amplify/aws-sdk-ios-spm";
+			repositoryURL = "https://github.com/Alamofire/Alamofire#installation";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.35.0;
+				minimumVersion = 5.11.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		49A81B1F2BD521F80095D7A4 /* AWSIoT */ = {
+		4961265E2F83781D00A4BC32 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 49A81B1E2BD521F80095D7A4 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
-			productName = AWSIoT;
+			package = 4961265D2F83781D00A4BC32 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
